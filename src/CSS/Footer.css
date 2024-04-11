@@ -1,0 +1,23 @@
+/* Footer container */
+.footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px 0;
+    width: 100%;
+  }
+  
+  /* Container within the footer */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Footer text */
+  .footer p {
+    /* margin: 0; */
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+  }
+  

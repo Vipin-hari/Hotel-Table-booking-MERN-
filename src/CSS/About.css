@@ -1,0 +1,15 @@
+/* Style for founder image */
+.founder-image {
+    text-align: center;
+    margin-bottom: 20px; /* Adjust margin as needed */
+  }
+  
+  .founder-image img {
+    width: 300px; /* Adjust the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Apply border radius for circular shape */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for visual effect */
+  }
+  p{
+    font-size: larger;
+  }

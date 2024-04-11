@@ -1,0 +1,74 @@
+/* Navbar container */
+.navbar {
+  background-color: #ffffff;
+  padding: 10px 0;
+  box-shadow: 2px 4px 6px rgba(245, 0, 0, 0.1);
+}
+
+/* Container within the navbar */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Brand/logo link */
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333333;
+}
+
+/* Navigation links */
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li:first-child {
+  margin-left: 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #666666;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #000000;
+}
+
+/* Show/hide navbar links based on screen size */
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    display: none; /* Hide the links by default on smaller screens */
+    flex-direction: column; /* Stack links vertically */
+    position: absolute;
+    top: 60px; /* Adjust top positioning as needed */
+    left: 0;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 2px 4px 6px rgba(245, 0, 0, 0.1);
+  }
+
+  .navbar ul.show {
+    display: flex; /* Show the links when the menu is toggled */
+  }
+
+  .navbar ul li {
+    margin-left: 0; /* Remove left margin for stacked links */
+  }
+}
